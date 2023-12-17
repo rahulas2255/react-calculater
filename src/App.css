@@ -1,0 +1,91 @@
+:root {
+  --ff-primary: "Roboto Condensed", sans-serif;
+
+  --clr-black-100: #417ece;
+  --clr-black-200: #2c2e3b;
+
+  --clr-gray-200: #3f4b5a;
+  --clr-gray-100: #5f677a;
+
+  --clr-orange-100: #d6831f;
+  --clr-orange-200: #ab5a1d;
+
+  --clr-white-100: #e1e5e6;
+  --clr-white-200: #c7cfd1;
+
+  --br-cal: 60px;
+  --br-btn: 20px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  width: 100vw;
+  height: 100vh;
+  background-color: #598ac6;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.calculator {
+  border-radius: 10px;
+  background-color: #28323f;
+  color: var(--clr-white-100);
+  padding: 15px 20px;
+ 
+}
+.display {
+  padding: 30px 10px 20px 10px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+input {
+  background: none;
+  outline: none;
+  border: none;
+  text-align: right;
+  color: var(--clr-white-100);
+  width: 240px;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+input#small {
+  font-size: 2.2rem;
+}
+input#big {
+  font-size: 3.2rem;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.btn {
+  border-radius:15px;
+  color: var(--clr-white-100);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.zero {
+  grid-column: span 2;
+}
+.gray {
+  background-color: #3f4b5a;
+}
+.black {
+  background-color: #4663a7;
+  
+}
+.orange {
+  background-color: #d6831f;
+  box-shadow:
+    1px 1px 0px 0px var(--clr-orange-100),
+    -1px -1px 0px 0px var(--clr-orange-200);
+}
